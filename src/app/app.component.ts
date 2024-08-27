@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {RouterOutlet} from "@angular/router";
 import {NavMenuComponent} from "./layout/nav-menu/nav-menu.component";
+import {HttpClientModule} from "@angular/common/http";
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,8 @@ import {NavMenuComponent} from "./layout/nav-menu/nav-menu.component";
   styleUrl: './app.component.scss',
   imports: [
     RouterOutlet,
-    NavMenuComponent
+    NavMenuComponent,
+    HttpClientModule
   ]
 })
 export class AppComponent {
