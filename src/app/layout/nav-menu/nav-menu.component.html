@@ -1,0 +1,23 @@
+<div class="top-row ps-3 navbar navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="">BlazorApp1</a>
+    <button title="Navigation menu" class="navbar-toggler" (click)="toggleNavMenu()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</div>
+
+<div class="nav-scrollable" [class.collapse]="collapsed" (click)="toggleNavMenu()">
+  <nav class="flex-column">
+    <div class="nav-item px-3">
+      <a class="nav-link" routerLink="/">
+        <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+      </a>
+    </div>
+    <div class="nav-item px-3">
+      <a class="nav-link" routerLink="/counter">
+        <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
+      </a>
+    </div>
+  </nav>
+</div>
