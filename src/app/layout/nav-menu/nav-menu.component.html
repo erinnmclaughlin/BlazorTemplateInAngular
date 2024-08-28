@@ -10,17 +10,17 @@
 <div class="nav-scrollable" [class.collapse]="collapsed" (click)="toggleNavMenu()">
   <nav class="flex-column">
     <div class="nav-item px-3">
-      <a class="nav-link" routerLink="/">
+      <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
         <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
       </a>
     </div>
     <div class="nav-item px-3">
-      <a class="nav-link" routerLink="/counter">
+      <a class="nav-link" routerLink="/counter" routerLinkActive="active">
         <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
       </a>
     </div>
     <div class="nav-item px-3">
-      <a class="nav-link" routerLink="/weather">
+      <a class="nav-link" routerLink="/weather" routerLinkActive="active">
         <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
       </a>
     </div>
